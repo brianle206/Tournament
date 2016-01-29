@@ -5,10 +5,10 @@ var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + "/client"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({exteneded: true}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 require('./server/config/mongoose.js');
-require('./server/config/routes.js').app;
+require('./server/config/routes.js')(app);
 
 app.listen(1337, function(){
 	console.log("Working on port 1337")
