@@ -1,0 +1,46 @@
+
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Register</h1>
+                        <h3>Daily Tournaments</h3>
+                        <hr class="intro-divider">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+    <div class='container'>
+        
+        <form role="form">
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" placeholder='Email Address' ng-model='registerCtrl.newUser.email'>
+             </div>
+             <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" placeholder='Username' ng-model='registerCtrl.newUser.username'>
+             </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder='Password' ng-model='registerCtrl.newUser.password'>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+                <button type="submit" class="btn btn-default" ng-click='registerCtrl.create(registerCtrl.newUser)'>Submit</button>
+        </form>
+    </div>
+
+   
+    </div>
+    <!-- /.paritial div -->
